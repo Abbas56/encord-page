@@ -1,10 +1,18 @@
+interface NavLinkProps {
+	children?: React.ReactNode;
+	href?: string;
+	hasDropdown?: boolean;
+	isActive?: boolean;
+	onClick?: () => void;
+}
+
 export function NavLink({
 	children,
 	href,
 	hasDropdown = false,
 	isActive = false,
 	onClick,
-}) {
+}: NavLinkProps) {
 	return (
 		<button
 			onClick={onClick}

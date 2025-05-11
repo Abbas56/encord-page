@@ -1,18 +1,6 @@
-"use client";
-
-import { useState } from "react";
 import SearchBar from "./SearchBar";
 
 export function DarkHeroBanner() {
-	const [email, setEmail] = useState("");
-
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		// Handle form submission (e.g., API call or redirect)
-		console.log("Email submitted:", email);
-		// You would typically send this to your backend or a service like Mailchimp
-	};
-
 	return (
 		<section className="bg-[#130B24] py-20 md:py-28 px-4 text-center">
 			<div className="max-w-2xl mx-auto">

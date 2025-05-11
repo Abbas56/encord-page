@@ -1,31 +1,6 @@
-"use client";
-
-import { useState } from "react";
 import SearchBar from "./SearchBar";
 
 export function HeroBanner() {
-	const [email, setEmail] = useState("");
-	const [isSubmitting, setIsSubmitting] = useState(false);
-
-	const handleSubmit = async (e) => {
-		e.preventDefault();
-		setIsSubmitting(true);
-
-		try {
-			// Simulate API call
-			await new Promise((resolve) => setTimeout(resolve, 1000));
-			console.log("Email submitted:", email);
-			// Reset form after successful submission
-			setEmail("");
-			// You could also show a success message here
-		} catch (error) {
-			console.error("Error submitting email:", error);
-			// You could show an error message here
-		} finally {
-			setIsSubmitting(false);
-		}
-	};
-
 	return (
 		<section className="py-16 sm:py-20 md:py-28 lg:py-32 px-4 text-center">
 			<div className="max-w-7xl mx-auto">

@@ -38,7 +38,7 @@ export function Navbar() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 	const [activeDropdown, setActiveDropdown] = useState(null);
 
-	const toggleDropdown = (label) => {
+	const toggleDropdown = (label: any) => {
 		setActiveDropdown(activeDropdown === label ? null : label);
 	};
 
