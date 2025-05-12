@@ -43,7 +43,7 @@ export function Carousel() {
 			<div className="max-w-7xl mx-auto">
 				{/* Label */}
 				<div className="mb-4">
-					<span className="inline-block bg-purple-100 text-purple-800 font-medium px-3 py-1 rounded-full text-sm">
+					<span className="inline-block bg-purple-100 text-[#1D0642] font-medium px-3 py-1 text-sm">
 						MODALITIES
 					</span>
 				</div>
